@@ -8,20 +8,20 @@ using Terraria.ModLoader;
 namespace ZinlakiThings.Items
 {
 	[AutoloadEquip(EquipType.Head)]
-    public class MoltenGuise : ModItem
+    public class OceanCurrentAlt : ModItem
     {
 
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Molten Deep Guise");
-			Tooltip.SetDefault("Clack clack clack!");
+			DisplayName.SetDefault("Ocean's Current");
+			Tooltip.SetDefault("Some say it was bound for the stars.");
 		}
 		
         public override void SetDefaults()
         {
             item.width = 18;
             item.height = 18;
-            item.rare = 3;
+            item.rare = 1;
             item.vanity = true;
         }
 		
@@ -38,8 +38,8 @@ namespace ZinlakiThings.Items
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.None);
-			recipe.AddTile(TileID.Dressers);
+			recipe.AddIngredient(mod, "OceanCurrent");
+			recipe.AddIngredient(ItemID.RedDye);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

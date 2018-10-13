@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace ZinlakiThings.Items   //We need this to basically indicate the folder where it is to be read from, so you the texture will load correctly
+namespace ZinlakiThings.Items
 {
 	[AutoloadEquip(EquipType.Head)]
     public class CausticVisage : ModItem
@@ -19,27 +19,27 @@ namespace ZinlakiThings.Items   //We need this to basically indicate the folder 
 		
         public override void SetDefaults()
         {
-            item.width = 18; //The size in width of the sprite in pixels.
-            item.height = 18;   //The size in height of the sprite in pixels.
-            item.rare = 7;    //The color the title of your item when hovering over it ingame 
-            item.vanity = true; //this defines if this item is vanity or not.
+            item.width = 18;
+            item.height = 18;
+            item.rare = 7;
+            item.vanity = true;
         }
 		
         public override bool DrawHead()
         {
-            return false;     //this makes it so the player head does not disappear when the vanity mask is equipped.  return false if you want it to not show the player head.
+            return false;
         }
 		
         public override void DrawHair(ref bool drawHair, ref bool drawAltHair)
         {
-            drawHair = drawAltHair = false;  //this makes it so the player hair does not show when the vanity mask is equipped.  add true if you want it to show the player hair.
+            drawHair = drawAltHair = false;
         }
 		
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemID.None);
-			recipe.AddTile(TileID.WorkBenches);
+			recipe.AddTile(TileID.Dressers);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

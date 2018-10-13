@@ -33,7 +33,8 @@ namespace ZinlakiThings
 			if (!Main.dedServ) // do not run this code on the server
 			{
 				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Test"), ItemType("TestMusicBox"), TileType("TestMusicBox"));
-				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/NightShift"), ItemType("NightShiftMusicBox"), TileType("NightShiftMusicBox"));
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/Stargaze"), ItemType("MusicBoxStargaze"), TileType("MusicBoxStargaze"));
+				AddMusicBox(GetSoundSlot(SoundType.Music, "Sounds/Music/NightShift"), ItemType("MusicBoxNightShift"), TileType("MusicBoxNightShift"));
 			}
 		}
 	}

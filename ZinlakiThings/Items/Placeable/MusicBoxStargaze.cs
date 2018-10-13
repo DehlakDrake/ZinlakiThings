@@ -3,11 +3,11 @@ using Terraria.ModLoader;
 
 namespace ZinlakiThings.Items.Placeable
 {
-	public class NightShiftMusicBox : ModItem
+	public class MusicBoxStargaze : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Music Box (Night Shift)");
+			DisplayName.SetDefault("Music Box (Stargaze)");
 		}
 
 		public override void SetDefaults()
@@ -18,7 +18,7 @@ namespace ZinlakiThings.Items.Placeable
 			item.useTime = 10;
 			item.autoReuse = true;
 			item.consumable = true;
-			item.createTile = mod.TileType("NightShiftMusicBox");
+			item.createTile = mod.TileType("MusicBoxStargaze");
 			item.width = 24;
 			item.height = 24;
 			item.rare = 1;
@@ -30,7 +30,8 @@ namespace ZinlakiThings.Items.Placeable
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(mod, "TheLaconic");
-			recipe.AddIngredient(ItemID.MusicBox);
+			recipe.AddIngredient(ItemID.FallenStar, 14);
+			recipe.AddIngredient(ItemID.MusicBoxNight);
 			recipe.AddTile(TileID.WorkBenches);
 			recipe.SetResult(this);
 			recipe.AddRecipe();

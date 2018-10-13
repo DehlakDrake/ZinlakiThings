@@ -39,7 +39,7 @@ namespace ZinlakiThings.Items   //We need this to basically indicate the folder 
 		{
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(ItemID.None);
-			recipe.AddTile(TileID.WorkBenches);
+			recipe.AddTile(TileID.Dressers);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}

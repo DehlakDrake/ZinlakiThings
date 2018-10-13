@@ -8,20 +8,20 @@ using Terraria.ModLoader;
 namespace ZinlakiThings.Items
 {
 	[AutoloadEquip(EquipType.Head)]
-    public class MoltenGuise : ModItem
+    public class AbyssalThunderclacker : ModItem
     {
 
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Molten Deep Guise");
-			Tooltip.SetDefault("Clack clack clack!");
+			DisplayName.SetDefault("Abyssal Thunderclacker");
+			Tooltip.SetDefault("An unfathomable combination of rumbles and clacks from the deep.");
 		}
 		
         public override void SetDefaults()
         {
             item.width = 18;
             item.height = 18;
-            item.rare = 3;
+            item.rare = -1;
             item.vanity = true;
         }
 		
@@ -38,8 +38,9 @@ namespace ZinlakiThings.Items
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.None);
-			recipe.AddTile(TileID.Dressers);
+			recipe.AddIngredient(mod, "AbyssalThunderclapper");
+			recipe.AddIngredient(mod, "MoltenGuise");
+			recipe.AddTile(TileID.Workbenches);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}
