@@ -8,7 +8,7 @@ using Terraria.ModLoader;
 namespace ZinlakiThings.Items
 {
 	[AutoloadEquip(EquipType.Head)]
-    public class GuardianFlare : ModItem
+    public class GuardianFlair : ModItem
     {
 
 		public override void SetStaticDefaults()
