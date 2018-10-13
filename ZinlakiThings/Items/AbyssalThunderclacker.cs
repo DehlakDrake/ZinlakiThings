@@ -40,7 +40,7 @@ namespace ZinlakiThings.Items
 			ModRecipe recipe = new ModRecipe(mod);
 			recipe.AddIngredient(mod, "AbyssalThunderclapper");
 			recipe.AddIngredient(mod, "MoltenGuise");
-			recipe.AddTile(TileID.Workbenches);
+			recipe.AddTile(TileID.WorkBenches);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}
