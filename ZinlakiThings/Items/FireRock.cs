@@ -14,7 +14,7 @@ namespace ZinlakiThings.Items   //We need this to basically indicate the folder 
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Flame-ridden Rock");
-			Tooltip.SetDefault("Nothing beats fire rock!");
+			Tooltip.SetDefault("Paper? Nothing beats fire rock!");
 		}
 		
         public override void SetDefaults()
