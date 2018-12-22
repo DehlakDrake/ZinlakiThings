@@ -38,8 +38,9 @@ namespace ZinlakiThings.Items
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-			recipe.AddIngredient(ItemID.None);
-			recipe.AddTile(TileID.Dressers);
+			recipe.AddIngredient(mod, "SteelTempest");
+			recipe.AddIngredient(ItemID.ReflectiveGoldDye);
+			recipe.AddTile(TileID.IceMachine);
 			recipe.SetResult(this);
 			recipe.AddRecipe();
 		}
